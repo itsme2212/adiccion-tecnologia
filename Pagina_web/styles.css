@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #E0E0E0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Parallax background */
+.parallax {
+    background-image: url('path-to-parallax-image.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Section de botones */
+.buttons-section {
+    text-align: center;
+    margin: 2rem;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.buttons-section button {
+    background-color: #1976D2; /* Azul acento */
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons-section button:hover {
+    background-color: #004BA0; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para las imágenes pequeñas debajo de los botones */
+.button-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Hidden sections */
+.hidden-section {
+    display: none;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #1E1E1E; /* Fondo gris oscuro para las secciones */
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1E1E1E; /* Fondo gris oscuro */
+    color: #A0A0A0; /* Texto gris claro */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .buttons-section button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .button-image {
+        width: 100px;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+
+    .button-container {
+        margin-bottom: 20px;
+    }
+}
